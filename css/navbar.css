@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.navbar-logo {
+  font-size: 2em;
+  color: #1DA1F2;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.navbar-image {
+  width: 60px;
+  height: 60px;
+  background-image: url("chemin/vers/votre/image.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 40px;
+  border: 2px solid white;
+}
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
