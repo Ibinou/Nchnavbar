@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/.css">
         <link rel="stylesheet" href="css/searchbar.css">
         <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/rectangle.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/tapbar.css">
         <link rel="stylesheet" href="css/navigation.css">
         <link rel="manifest" href="manifest.json">
@@ -14,6 +14,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
 
 <meta name="apple-mobile-web-app-capable" content="yes">
+
+<body>
+   
+  <header class="navbar">
+  <div class="navbar__container">
+    <div class="navbar__left">
+      <a href="#" class="navbar__logo">
+        <img src="https://sidestore.io/assets/images/logo.png" alt="Logo">
+      </a>
+      <nav class="navbar__menu">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Catalogue</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="navbar__right">
+      <div class="navbar__cart">
+        <a href="#">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="navbar__cart-badge">0</span>
+        </a>
+      </div>
+      <div class="navbar__search">
+        <a href="#">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="navbar__burger">
+        <a href="#">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+           
+     
+</body>
 
 <style>
     </head>
