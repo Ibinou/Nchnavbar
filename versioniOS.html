@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Version d'iOS</title>
+    <script>
+      var version = navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);
+      var iOSVersion = parseInt(version[1], 10);
+      document.write("Version d'iOS : " + iOSVersion);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
