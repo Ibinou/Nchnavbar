@@ -21,15 +21,10 @@
   margin-left: 40px;
 }
 
-.navbar-image {
-  width: 60px;
-  height: 60px;
-  background-image: url("chemin/vers/votre/image.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
+.navbar-title {
+  font-size: 1.5em;
+  font-weight: bold;
   margin-right: 40px;
-  border: 2px solid white;
 }
 
 /* Font Awesome */
