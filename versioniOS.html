@@ -2,13 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Version d'iOS</title>
-    <script>
-      var version = navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);
-      var iOSVersion = parseInt(version[1], 10);
-      document.write("Version d'iOS : " + iOSVersion);
-    </script>
-  </head>
-  <body>
-  </body>
+<body>
+    
+<p style="display:inline-block;margin-left:5px;margin-right:5px;"><script type="text/javascript"> var ios = ((navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].replace(/_/g, ".").replace("OS", "iOS"))
+                        document.write(""+ios+"")
+                    </script></p>
+</body>
+<body>
+<p style="display:inline-block;margin-left:5px;margin-right:5px;"><script type="text/javascript"> var ios = ((navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].replace(/_/g, ".").replace("OS", ""))
+                        document.write(""+ios+"")
+                    </script></p>
+</body>
 </html>
