@@ -3,32 +3,44 @@
   <head>
     <title>Mon site web</title>
     <style>
+      /* styles pour le rectangle contenant le nom du produit et l'image */
+      .product-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 200px;
+        background-color: #ccc;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
       /* styles pour le rectangle contenant le nom du produit */
       .product-rectangle {
         width: 200px;
-        height: 50px;
-        background-color: #ccc;
-        border-radius: 10px;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 20px;
-        font-weight: bold;
       }
 
       /* styles pour l'image de l'iPhone */
       .iphone-image {
         width: 300px;
         height: 600px;
-        margin-top: 20px;
+        margin-left: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="product-rectangle">
-      <span id="modele-iphone"></span>
+    <div class="product-container">
+      <div class="product-rectangle">
+        <span id="modele-iphone"></span>
+      </div>
+      <img id="image-iphone" class="iphone-image" src="">
     </div>
-    <img id="image-iphone" class="iphone-image" src="">
     
     <script>
       var userAgent = navigator.userAgent.toLowerCase();
@@ -63,11 +75,9 @@
           image = "https://i.imgur.com/nY4pbZ4.png";
         } else if (userAgent.indexOf('iphone 8') !== -1) {
           modele = "iPhone 8";
-          image = "https://i.imgur.com/TTbFhJ7.png";
+          image = "https://d1eh9yux7w8iql.cloudfront.net/product_images/36827_24756a33-907f-4a5a-ac95-73ce492104e7.jpg";
         } else if (userAgent.indexOf('iphone 7 plus') !== -1) {
           modele = "iPhone 7 Plus";
-          image = "https://i.imgur.com/Ln6Uatf.png";
-        } else if (userAgent.indexOf('iphone 7') !== -1) {
-          modele = "iPhone 7";
-          image = "https://i.imgur.com/kBR2Eso.png";
-        } else if (userAgent.indexOf('iphone se') !==
+          image = "https://d1eh9yux7w8iql.cloudfront.net/product_images/36827_24756a33-907f-4a5a-ac95-73ce492104e7.jpg";
+
+
