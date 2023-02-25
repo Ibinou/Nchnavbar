@@ -1,0 +1,26 @@
+#modele-iphone {
+  background-color: #D7D7D7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#modele-iphone p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#nom-modele {
+  font-weight: bold;
+}
+
+#image-iphone {
+  max-width: 80%;
+  max-height: 70%;
+}
