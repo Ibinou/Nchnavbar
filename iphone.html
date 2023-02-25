@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>NoCodeHub Installer</title>
-        <link rel="stylesheet" href="css/preview.css">
-        <link rel="stylesheet" href="css/iphone.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <head>
+    <title>Mon site web</title>
+    <style>
+      /* styles pour le rectangle contenant le nom du produit */
+      .product-rectangle {
+        width: 200px;
+        height: 50px;
+        background-color: #ccc;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-        
-<div id="modele-iphone">
-  <p>Le modèle de votre iPhone est : <span id="nom-modele"></span></p>
-  <img id="image-iphone" src="" alt="">
-</div>
+      /* styles pour l'image de l'iPhone */
+      .iphone-image {
+        width: 300px;
+        height: 600px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-rectangle">
+      <span id="modele-iphone"></span>
+    </div>
+    <img id="image-iphone" class="iphone-image" src="">
+    
+    <script>
+      var userAgent = navigator.userAgent.toLowerCase();
+      var modele = "";
+      var image = "";
 
-</body>
-
-<div>
-
-</html>
+      if (userAgent.indexOf('iphone') !== -1) {
+        // l'appareil est un iPhone
+        if (userAgent.indexOf('iphone 12') !== -1) {
+          modele = "iPhone 12";
+          image = "https://i.imgur.com/1R7aU6x.png";
+        } else if (userAgent.indexOf('iphone se') !== -1) {
+          modele = "iPhone SE (2ème génération)";
+          image = "https://i.imgur.com/OGJS3wA.png";
+        } else if (userAgent.indexOf('iphone 11 pro') !== -1) {
+          modele = "iPhone 11 Pro";
+          image = "https://i.imgur.com/R5O5Nwi.png";
+        } else if (userAgent.indexOf('iphone 11') !== -1) {
+          modele = "iPhone 11";
+          image = "https://i.imgur.com/nE6Q2oI.png";
+        } else if (userAgent.indexOf('iphone xs') !== -1) {
+          modele = "iPhone XS";
+          image = "https://i.imgur.com/5ayJk5e.png";
+        } else if (userAgent.indexOf('iphone xr') !== -1) {
+          modele = "iPhone XR";
+          image = "https://i.imgur.com/VaKHfKM.png";
+        } else if (userAgent.indexOf('iphone x') !== -1) {
+          modele = "iPhone X";
+          image = "https://i.imgur.com/dEiRtCY.png";
+        } else if (userAgent.indexOf('iphone 8 plus') !== -1) {
+          modele = "iPhone 8 Plus";
+          image = "https://i.imgur.com/nY4pbZ4.png";
+        } else if (userAgent.indexOf('iphone 8') !== -1) {
+          modele = "iPhone 8";
+          image = "https://i.imgur.com/TTbFhJ7.png";
+        } else if (userAgent.indexOf('iphone 7 plus') !== -1) {
+          modele = "iPhone 7 Plus";
+          image = "https://i.imgur.com/Ln6Uatf.png";
+        } else if (userAgent.indexOf('iphone 7') !== -1) {
+          modele = "iPhone 7";
+          image = "https://i.imgur.com/kBR2Eso.png";
+        } else if (userAgent.indexOf('iphone se') !==
